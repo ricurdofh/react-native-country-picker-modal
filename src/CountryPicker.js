@@ -408,7 +408,8 @@ componentDidUpdate (prevProps) {
               {this.props.showCountryNameWithFlag && CountryPicker.renderFlagWithName(this.props.cca2,this.getCountryName(countries[this.props.cca2]),
                 styles.itemCountryFlag,
                 styles.emojiFlag,
-                styles.imgStyle)}
+                styles.imgStyle,
+                selectCountryName)}
 
               {!this.props.showCountryNameWithFlag && CountryPicker.renderFlag(this.props.cca2,
                 styles.itemCountryFlag,

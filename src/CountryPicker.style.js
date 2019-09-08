@@ -72,6 +72,9 @@ export default StyleSheet.create({
   countryName: {
     fontSize: getHeightPercent(2.2)
   },
+  selectCountryName: {
+    fontSize: 16,
+  },
   countryCode: {
     textAlign: 'right'
   },

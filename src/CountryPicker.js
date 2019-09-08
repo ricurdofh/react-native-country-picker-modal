@@ -125,7 +125,7 @@ export default class CountryPicker extends Component {
     )
   }
 
-  static renderFlagWithName(cca2,countryName, itemStyle, emojiStyle, imageStyle) {
+  static renderFlagWithName(cca2,countryName, itemStyle, emojiStyle, imageStyle, selectCountryName) {
     return (
       <View style={{flexDirection:'row', flexWrap:'wrap',alignItems: "center",}}>
         <View style={[countryPickerStyles.itemCountryFlag, itemStyle]}>
@@ -134,7 +134,7 @@ export default class CountryPicker extends Component {
             : CountryPicker.renderImageFlag(cca2, imageStyle)}
 
         </View>
-        <Text style={{fontSize:16}}>{countryName}</Text>
+        <Text style={selectCountryName}>{countryName}</Text>
       </View>
     )
   }
